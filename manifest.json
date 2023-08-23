@@ -1,0 +1,18 @@
+{
+    "description": "Twitter Force Following Tab for Firefox",
+    "manifest_version": 2,
+    "name": "FxTwitterForceFollowingTab",
+    "version": "1.0",
+    "permissions": [
+        "*://twitter.com/*"
+      ],
+      "background": {
+        "scripts": ["twitter.js"]
+      },
+      "content_scripts": [
+        {
+          "matches": ["*://twitter.com/*"],
+          "js": ["twitter.js"]
+        }
+      ]
+  }
